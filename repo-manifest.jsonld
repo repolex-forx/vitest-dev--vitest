@@ -2653,8 +2653,9 @@
     {
       "@id": "https://repolex.ai/r/vitest-dev/vitest/commit/512ac7f8d6f3ccb242dc14972f1bcda93abfeed2",
       "git:hexsha": "512ac7f8d6f3ccb242dc14972f1bcda93abfeed2",
-      "repolex:parseStatus": "pending",
-      "git:tagName": "v4.0.0-beta.8"
+      "repolex:parseStatus": "parsed",
+      "git:tagName": "v4.0.0-beta.8",
+      "repolex:parsedAt": "2026-04-11T18:18:57.203258+00:00"
     },
     {
       "@id": "https://repolex.ai/r/vitest-dev/vitest/commit/23c10e44b0beea92f88a62d56e047c0cd8e59c03",

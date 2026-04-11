@@ -1,0 +1,7 @@
+[2026-04-11T15:13:06Z] === AST ITERATION 1 START | repo=vitest-dev/vitest sha=a0cdc959 ===
+[2026-04-11T15:13:06Z] [iter=1] PHASE START: ast repo=vitest-dev/vitest sha=a0cdc959
+[2026-04-11T15:13:06Z] [iter=1] Building AST aggregate chunks
+[2026-04-11T15:18:52Z] [iter=1] AST chunks built count=1 triples=4259838
+[2026-04-11T15:18:52Z] [iter=1] AST .complete marker written path=/home/runner/work/forx/forx/storage/aggregate/ast/a0cdc959f9eb081039d80151086e3eb99721dbef/.complete
+[2026-04-11T15:18:52Z] [iter=1] PHASE END: ast elapsed_s=346 elapsed_min=5.8
+[2026-04-11T15:18:52Z] [iter=1] Wrote .next-action.json next_action=enrich path=/home/runner/work/forx/forx/storage/aggregate/.next-action.json

@@ -1,0 +1,94 @@
+[2026-04-12T14:32:45Z] === ENRICH ITERATION 5 START | repo=vitest-dev/vitest sha=79bcd1aa ===
+[2026-04-12T14:32:45Z] [iter=5] PHASE START: enrich repo=vitest-dev/vitest sha=79bcd1aa runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/79bcd1aa-enrich-iter-005.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/79bcd1aa02151fe0a1761403de20077dfe3537b8.nq.gz
+[2026-04-12T14:33:00Z] [iter=5] Step 1: Loading AST into disk-backed store mem_mb=81 MB
+[2026-04-12T14:33:34Z] [iter=5] AST store loaded triples=3969816 load_secs=33 mem_mb=946 MB
+[2026-04-12T14:33:34Z] [iter=5] Step 2: Finding LSP targets mem_mb=946 MB
+[2026-04-12T14:33:39Z] [iter=5] LSP targets found call_sites=40762 imports=4522 extends=135 implements=31 secs=5
+[2026-04-12T14:33:47Z] [iter=5] Loaded checkpoint partial graph triples=171869
+[2026-04-12T14:33:50Z] [iter=5] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=946 MB
+[2026-04-12T14:34:11Z] [iter=5] Position index built positions=262895 nodes_with_types=314889 secs=21 mem_mb=1319 MB
+[2026-04-12T14:34:11Z] [iter=5] Step 3: Starting LSP resolution mem_mb=1319 MB already_completed_types=[] already_completed_files=1083
+[2026-04-12T14:34:11Z] [iter=5] Resolving target type target_type=call_site count=40762
+[2026-04-12T14:34:11Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=1.4 files_done=0 resolved=0 errors=0 current=test/coverage-test/test/virtual-files.test.ts
+[2026-04-12T14:34:41Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=1.9 files_done=1 resolved=0 errors=18 current=test/cli/fixtures/console/trace.test.ts
+[2026-04-12T14:35:22Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=2.6 files_done=7 resolved=0 errors=41 current=packages/browser/src/client/channel.ts
+[2026-04-12T14:35:53Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=3.1 files_done=11 resolved=0 errors=59 current=test/browser/src/actions.ts
+[2026-04-12T14:36:29Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=3.7 files_done=15 resolved=0 errors=80 current=test/coverage-test/vitest.workspace.custom.ts
+[2026-04-12T14:37:09Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=4.4 files_done=21 resolved=1 errors=103 current=test/config/fixtures/base-path/test/mocking-with-base.spec.ts
+[2026-04-12T14:37:44Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=5.0 files_done=27 resolved=2 errors=124 current=test/reporters/fixtures/duration/basic.test.ts
+[2026-04-12T14:38:16Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=5.5 files_done=32 resolved=3 errors=142 current=test/optimize-deps/test/ssr.test.ts
+[2026-04-12T14:38:56Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=6.2 files_done=35 resolved=3 errors=166 current=test/coverage-test/fixtures/setup.isolation.ts
+[2026-04-12T14:39:26Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=6.7 files_done=39 resolved=3 errors=184 current=test/browser/specs/browser-crash.test.ts
+[2026-04-12T14:39:59Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=7.2 files_done=46 resolved=4 errors=203 current=test/config/fixtures/browser-custom-html/vitest.config.non-existing.ts
+[2026-04-12T14:40:36Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=7.8 files_done=51 resolved=8 errors=224 current=test/browser/fixtures/mocking/src/calculator.ts
+[2026-04-12T14:41:08Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=8.4 files_done=59 resolved=9 errors=241 current=test/global-setup/vitest.config.ts
+[2026-04-12T14:41:50Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=9.1 files_done=67 resolved=13 errors=266 current=test/workspaces/space_3/vitest.config.ts
+[2026-04-12T14:42:24Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=9.7 files_done=76 resolved=18 errors=285 current=test/config/fixtures/conditions-test/vitest.config.ts
+[2026-04-12T14:42:58Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=10.2 files_done=82 resolved=18 errors=304 current=test/reporters/tests/error-to-json.test.ts
+[2026-04-12T14:43:50Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=11.1 files_done=87 resolved=21 errors=335 current=test/config/fixtures/workspace/config-import-analysis/packages/a/test.test.ts
+[2026-04-12T14:44:22Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=11.6 files_done=94 resolved=21 errors=353 current=test/cli/fixtures/fails/snapshot-with-not.test.ts
+[2026-04-12T14:44:57Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=12.2 files_done=100 resolved=21 errors=373 current=examples/typecheck/test/normal.test.ts
+[2026-04-12T14:45:33Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=12.8 files_done=106 resolved=21 errors=394 current=test/snapshots/test/fixtures/file/basic.test.ts
+[2026-04-12T14:46:05Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=13.3 files_done=113 resolved=21 errors=411 current=test/core/test/mocking/has-extension.spec.ts
+[2026-04-12T14:46:39Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=13.9 files_done=120 resolved=21 errors=430 current=test/config/fixtures/project/packages/space_1/base.test.ts
+[2026-04-12T14:47:13Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=14.5 files_done=128 resolved=21 errors=449 current=test/cli/fixtures/fails/no-assertions.test.ts
+[2026-04-12T14:47:45Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=15.0 files_done=138 resolved=22 errors=468 current=test/vite-node/src/testMod.ts
+[2026-04-12T14:48:16Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=15.5 files_done=148 resolved=22 errors=485 current=test/core/src/custom/gardener.ts
+[2026-04-12T14:48:50Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=16.1 files_done=157 resolved=22 errors=504 current=test/config/fixtures/browser-custom-html/vitest.config.default-transformIndexHtml.ts
+[2026-04-12T14:49:24Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=16.7 files_done=166 resolved=24 errors=523 current=packages/vitest/src/integrations/snapshot/environments/node.ts
+[2026-04-12T14:49:55Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=17.2 files_done=172 resolved=24 errors=541 current=test/browser/fixtures/worker/vitest.config.ts
+[2026-04-12T14:50:26Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=17.7 files_done=179 resolved=24 errors=558 current=test/core/src/mocks/export-default-circle-index.ts
+[2026-04-12T14:50:57Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=18.2 files_done=189 resolved=25 errors=574 current=packages/vitest/src/node/errors.ts
+[2026-04-12T14:51:32Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=18.8 files_done=198 resolved=31 errors=593 current=test/reporters/fixtures/retry.test.ts
+[2026-04-12T14:52:04Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=19.3 files_done=207 resolved=33 errors=610 current=test/browser/fixtures/timeout/vitest.config.ts
+[2026-04-12T14:52:35Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=19.8 files_done=217 resolved=33 errors=626 current=packages/utils/src/nanoid.ts
+[2026-04-12T14:53:05Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=20.3 files_done=230 resolved=36 errors=642 current=test/core/src/mocks/zustand-magic.ts
+[2026-04-12T14:53:37Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=20.9 files_done=240 resolved=36 errors=659 current=packages/vitest/importMeta.d.ts
+[2026-04-12T14:54:08Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=21.4 files_done=256 resolved=37 errors=674 current=test/browser/fixtures/benchmark/vitest.config.ts
+[2026-04-12T14:54:38Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=21.9 files_done=269 resolved=39 errors=689 current=test/cli/fixtures/console/vitest.config.ts
+[2026-04-12T14:55:10Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=22.4 files_done=285 resolved=40 errors=706 current=test/cli/fixtures/list/custom.config.ts
+[2026-04-12T14:55:41Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=22.9 files_done=300 resolved=42 errors=722 current=test/config/fixtures/workspace/config-import-analysis/vitest.config.ts
+[2026-04-12T14:56:12Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=23.4 files_done=318 resolved=46 errors=737 current=test/vite-node/src/circular1/b.ts
+[2026-04-12T14:57:13Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=24.5 files_done=327 resolved=48 errors=771 current=test/cli/fixtures/vm-threads/import-external-css-assets.test.js
+[2026-04-12T14:58:01Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=25.3 files_done=328 resolved=54 errors=801 current=test/core/src/wasm/wasm-bindgen-no-cyclic/index_bg.js
+[2026-04-12T14:58:45Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=26.0 files_done=329 resolved=56 errors=829 current=packages/coverage-v8/rollup.config.js
+[2026-04-12T14:59:27Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=26.7 files_done=331 resolved=58 errors=854 current=test/public-mocker/fixtures/redirect/index.js
+[2026-04-12T15:00:02Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=27.3 files_done=333 resolved=59 errors=876 current=packages/vitest/suppress-warnings.cjs
+[2026-04-12T15:00:34Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=27.8 files_done=336 resolved=62 errors=895 current=packages/vitest/rollup.config.js
+[2026-04-12T15:01:55Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=29.2 files_done=337 resolved=68 errors=945 current=test/core/test/hooks.test.js
+[2026-04-12T15:02:30Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=29.7 files_done=338 resolved=69 errors=966 current=test/core/test/strict.test.js
+[2026-04-12T15:03:02Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=30.3 files_done=340 resolved=70 errors=986 current=packages/pretty-format/rollup.config.js
+[2026-04-12T15:03:33Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=30.8 files_done=343 resolved=73 errors=1004 current=test/cli/deps/error/index.js
+[2026-04-12T15:04:05Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=31.3 files_done=346 resolved=77 errors=1023 current=packages/spy/rollup.config.js
+[2026-04-12T15:05:07Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=32.4 files_done=349 resolved=80 errors=1060 current=test/cli/fixtures/vm-threads/require-cjs.test.js
+[2026-04-12T15:05:55Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=33.2 files_done=350 resolved=80 errors=1090 current=test/core/src/cjs/nested-default-cjs.js
+[2026-04-12T15:06:37Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=33.9 files_done=353 resolved=91 errors=1115 current=test/global-setup/globalSetup/named-exports.js
+[2026-04-12T15:07:11Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=34.4 files_done=356 resolved=92 errors=1135 current=test/typescript/test-d/js.test-d.js
+[2026-04-12T15:07:48Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=35.0 files_done=359 resolved=92 errors=1157 current=test/browser/fixtures/multiple-different-configs/basic.test.js
+[2026-04-12T15:08:22Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=35.6 files_done=361 resolved=95 errors=1177 current=test/global-setup/globalSetup/default-export.js
+[2026-04-12T15:08:55Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=36.2 files_done=365 resolved=99 errors=1197 current=test/cli/fixtures/restricted-fs/tests/basic.spec.js
+[2026-04-12T15:09:39Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=36.9 files_done=371 resolved=102 errors=1224 current=test/config/fixtures/shard/test/2.test.js
+[2026-04-12T15:10:16Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=37.5 files_done=374 resolved=105 errors=1246 current=test/vite-node/src/cli-parse-args.js
+[2026-04-12T15:10:50Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=38.1 files_done=379 resolved=106 errors=1266 current=packages/mocker/rollup.config.js
+[2026-04-12T15:11:48Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=39.0 files_done=382 resolved=111 errors=1301 current=test/cli/fixtures/stacktraces/add-in-js.test.js
+[2026-04-12T15:12:22Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=39.6 files_done=385 resolved=114 errors=1322 current=test/reporters/src/custom-reporter.js
+[2026-04-12T15:13:05Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=40.3 files_done=388 resolved=115 errors=1348 current=test/coverage-test/fixtures/custom-reporter.cjs
+[2026-04-12T15:13:36Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=40.8 files_done=392 resolved=118 errors=1366 current=scripts/build-utils.js
+[2026-04-12T15:14:07Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=41.4 files_done=396 resolved=123 errors=1384 current=test/vite-node/src/cli-print-env.js
+[2026-04-12T15:14:51Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=42.1 files_done=401 resolved=126 errors=1411 current=packages/web-worker/rollup.config.js
+[2026-04-12T15:15:23Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=42.6 files_done=404 resolved=128 errors=1430 current=test/snapshots/test/fixtures/custom-serializers/serializer-1.js
+[2026-04-12T15:15:53Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=43.1 files_done=410 resolved=130 errors=1447 current=test/config/fixtures/inline-setup-file/test.test.js
+[2026-04-12T15:16:24Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=43.6 files_done=421 resolved=131 errors=1465 current=test/vite-node/src/hmr-script.js
+[2026-04-12T15:16:55Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=44.2 files_done=442 resolved=136 errors=1481 current=test/core/__mocks__/fs/promises.cjs
+[2026-04-12T15:17:04Z] [iter=5] Target type resolved target_type=call_site resolved=140 errors=1485 secs=2574 mem_mb=1336 MB
+[2026-04-12T15:17:04Z] [iter=5] Resolving target type target_type=import_statement count=4522
+[2026-04-12T15:17:45Z] [iter=5] HEARTBEAT target_type=import_statement elapsed_min=45.0 files_done=108 resolved=150 errors=0 current=test/coverage-test/fixtures/configs/vitest.config.ts
+[2026-04-12T15:18:04Z] [iter=5] Target type resolved target_type=import_statement resolved=320 errors=0 secs=60 mem_mb=1338 MB
+[2026-04-12T15:18:04Z] [iter=5] Resolving target type target_type=extends_clause count=135
+[2026-04-12T15:18:07Z] [iter=5] Target type resolved target_type=extends_clause resolved=64 errors=0 secs=3 mem_mb=1338 MB
+[2026-04-12T15:18:07Z] [iter=5] Resolving target type target_type=implements_clause count=31
+[2026-04-12T15:18:08Z] [iter=5] Target type resolved target_type=implements_clause resolved=2 errors=0 secs=2 mem_mb=1338 MB
+[2026-04-12T15:18:32Z] [iter=5] Step 5: Writing final enrichment file triples=362485
+[2026-04-12T15:18:41Z] [iter=5] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/79bcd1aa02151fe0a1761403de20077dfe3537b8.nq.gz size_kb=9437
+[2026-04-12T15:18:41Z] [iter=5] Checkpoint cleared (enrichment complete)
+[2026-04-12T15:18:41Z] [iter=5] PHASE END: enrich elapsed_s=2756 elapsed_min=45.9 total_triples=362485
